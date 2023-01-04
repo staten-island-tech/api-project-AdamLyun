@@ -1,0 +1,12 @@
+#table {
+    height: 100px;
+    width: 550px;
+    background-color: white;
+    margin: auto;
+  }
+  
+  table,th,td{
+    margin: auto;
+    text-align: center;
+    border: 1px solid black
+  }
