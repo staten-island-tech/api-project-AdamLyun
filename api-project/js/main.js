@@ -15,8 +15,14 @@ async function getData(URL) {
   try {
     const response = await fetch(URL);
     const data = await response.json();
-    document.getElementById("api-response").textContent = data.reference;
-    document.getElementById("api-response2").textContent = data.text;
+    DOMSelectors.box.insertAdjacentHTML(
+      "beforeend",
+      `<div class="output">
+      <h3>${data.reference}</h3>
+       <h3>${data.text}</h3>
+       <button id="btn2">Add</button>
+      </div>`
+    );
   } catch (error) {
     console.log(error);
   }
@@ -39,7 +45,7 @@ DOMSelectors.button2.addEventListener("click", function () {
   const URL2 = `https://bible-api.com/${book}+${chapter}:${verse}`;
 
   getDatas(URL2);
-  console.log(URL);
+  console.log(URL2);
 });
 
 
