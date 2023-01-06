@@ -1,13 +1,14 @@
 import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 
-
-DOMSelectors.button.addEventListener("click", function (e) {
+DOMSelectors.button.addEventListener("click", function () {
   const book = document.getElementById("Name").value;
   const chapter = document.getElementById("Chapter").value;
-const verse = document.getElementById("Verse").value;
+  const verse = parseInt(document.getElementById("Verse").value);
   const URL = `https://bible-api.com/${book}+${chapter}:${verse}`;
   getData(URL);
+  bob();
+
   console.log(URL);
 });
 
@@ -20,7 +21,7 @@ async function getData(URL) {
       `<div class="output">
       <h3>${data.reference}</h3>
        <h3>${data.text}</h3>
-       <button id="btn2">Add</button>
+       <button class="btn2">Add</button> 
       </div>`
     );
   } catch (error) {
@@ -38,14 +39,11 @@ async function getDatas(URL2) {
   }
 }
 
-DOMSelectors.button2.addEventListener("click", function () {
-  const book = document.getElementById("Name").value;
-  const chapter = document.getElementById("Chapter").value;
-  const verse = parseInt(document.getElementById("Verse").value)+1;
-  const URL2 = `https://bible-api.com/${book}+${chapter}:${verse}`;
-
-  getDatas(URL2);
-  console.log(URL2);
-});
-
-
+function bob() {
+  let button2 = document.querySelectorAll(".btn2");
+  button2.forEach((goNext) => {
+    goNext.addEventListener("click", () => {
+      console.log("hi");
+    });
+  });
+}
