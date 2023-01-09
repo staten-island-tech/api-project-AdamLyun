@@ -1,12 +1,35 @@
-#table {
-    height: 100px;
-    width: 550px;
-    background-color: white;
-    margin: auto;
-  }
-  
-  table,th,td{
-    margin: auto;
-    text-align: center;
-    border: 1px solid black
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: powderblue;
+}
+
+button {
+  font-size: 4rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.5s;
+}
+
+#container{
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  margin: 2%;
+}
+
+img {
+  width: 90%;
+  margin: 10%;
+  height: 30rem;
+}
