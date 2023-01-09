@@ -1,37 +1,36 @@
 import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 
-const URL = "https://seussology.info/api/books"
+const URL = "https://seussology.info/api/books";
 
-
-function readQuote(){
+function readQuote() {
   let input = document.querySelectorAll(".output");
-  input.forEach((showQuote)=>{
-    showQuote.addEventListener("click", function(){ 
-      console.log("hi")}
-    );
+  input.forEach((showQuote) => {
+    showQuote.addEventListener("click", function () {
+      filter((wat) => wat.type.includes(input.id));
+      console.log("hi");
+    });
   });
-};
-
+}
 
 async function getDatas(URL) {
   try {
     const response = await fetch(URL);
     const data = await response.json();
-    data.forEach(element => {
+    data.forEach((element) => {
       DOMSelectors.box.insertAdjacentHTML(
         "beforeend",
         `<div class="output">
-        <button onclick="readQuote()">
+        <button>
         <img src="${element.image}" alt="E"></button>
-        </div>`
+        </div>`,
+        console.log(element.id)
       );
     });
-  
+    readQuote();
   } catch (error) {
     console.log(error);
   }
 }
-
 
 getDatas(URL);
