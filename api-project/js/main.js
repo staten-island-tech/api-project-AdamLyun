@@ -3,8 +3,6 @@ import { DOMSelectors } from "./dom";
 
 const URL = "https://seussology.info/api/books";
 
-
-
 async function getDatas(URL) {
   try {
     const response = await fetch(URL);
@@ -22,25 +20,37 @@ async function getDatas(URL) {
 <button type="button" onclick="closePopup()">Ok</button>
 </div>
         </div>
-        <script>let popup= document.getElementById("popup")
-        function openPopup(){
-          popup.classList.add("open-popup")
-        }
-        function closePopup(){
-          popup.classList.remove("open-popup")
-        }</script>
+        
         `
-        ,
-       
       );
-     
-      
     });
+    console.log();
   } catch (error) {
     console.log(error);
   }
 }
 
-getDatas(URL);
+function openPopup() {
+  let popup = document.querySelectorAll("popup");
+  popup.forEach((button) => {
+    button.addEventListener("click", function () {
+      popup.classList.add("open-popup");
+    });
+  });
+}
 
+function closePopup() {
+  let popup = document.querySelectorAll("popup");
+  popup.forEach((button) => {
+    button.addEventListener("click", function () {
+      popup.classList.remove("open-popup");
+    });
+  });
+}
 
+function yes() {
+  getDatas(URL);
+  openPopup();
+  closePopup();
+}
+yes();
