@@ -11,7 +11,7 @@ async function getDatas(URL) {
       DOMSelectors.box.insertAdjacentHTML(
         "beforeend",
         `<div class="output">
-        <button type="submit" onclick="openPopup()">
+        <button type="submit" class="f">
         <img src="${element.image}" alt="E"></button>
 <div class="popup" id="popup">
 <h1>${element.title}</h1>
@@ -29,6 +29,10 @@ async function getDatas(URL) {
     console.log(error);
   }
 }
+
+const f = document.getElementsByClassName("f");
+console.log(f);
+// f.addEventListener("click", openPopup);
 
 function openPopup() {
   let popup = document.querySelectorAll("popup");
@@ -52,5 +56,6 @@ function yes() {
   getDatas(URL);
   openPopup();
   closePopup();
+  console.log(f);
 }
 yes();
