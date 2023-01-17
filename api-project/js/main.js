@@ -11,13 +11,13 @@ async function getDatas(URL) {
       DOMSelectors.box.insertAdjacentHTML(
         "beforeend",
         `<div class="output">
-        <button type="submit" class="f">
-        <img src="${element.image}" alt="E"></button>
+        <button class="f" >
+        <img  src="${element.image}" alt="E"></button>
 <div class="popup" id="popup">
-<h1>${element.title}</h1>
-<h2>${element.description}</h2>
+<p    >${element.title}</p>
+<p>${element.description}</p>
 <h3>Published In ${element.year_published}</h3>
-<button type="button" onclick="closePopup()">Ok</button>
+<button type="button" >Ok</button>
 </div>
         </div>
         
@@ -30,14 +30,13 @@ async function getDatas(URL) {
   }
 }
 
-const f = document.getElementsByClassName("f");
-console.log(f);
-// f.addEventListener("click", openPopup);
-
 function openPopup() {
-  let popup = document.querySelectorAll("popup");
+  let popup = document.querySelectorAll("button");
+  console.log(popup);
   popup.forEach((button) => {
+    console.log(button);
     button.addEventListener("click", function () {
+      console.log("ADam is poop");
       popup.classList.add("open-popup");
     });
   });
@@ -52,10 +51,9 @@ function closePopup() {
   });
 }
 
-function yes() {
-  getDatas(URL);
+async function yes() {
+  await getDatas(URL);
+
   openPopup();
-  closePopup();
-  console.log(f);
 }
 yes();
