@@ -1,4 +1,3 @@
-import "../styles/style.css";
 import { DOMSelectors } from "./dom";
 
 const URL = "https://seussology.info/api/books";
@@ -14,7 +13,7 @@ async function getDatas(URL) {
         <button class="f" >
         <img  src="${element.image}" alt="E"></button>
 <div class="popup" id="popup">
-<p    >${element.title}</p>
+<h1>${element.title}</h1>
 <p>${element.description}</p>
 <h3>Published In ${element.year_published}</h3>
 <button type="button" >Ok</button>
@@ -31,29 +30,25 @@ async function getDatas(URL) {
 }
 
 function openPopup() {
-  let popup = document.querySelectorAll("button");
-  console.log(popup);
+  let popup = document.querySelectorAll(".f");
   popup.forEach((button) => {
-    console.log(button);
     button.addEventListener("click", function () {
-      console.log("ADam is poop");
-      popup.classList.add("open-popup");
+      let popup2 = document.getElementById("popup");
+      popup2.classList.add("open-popup");
     });
   });
 }
 
 function closePopup() {
-  let popup = document.querySelectorAll("popup");
-  popup.forEach((button) => {
-    button.addEventListener("click", function () {
-      popup.classList.remove("open-popup");
-    });
+  let popup2 = document.getElementById("popup");
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
   });
 }
 
 async function yes() {
   await getDatas(URL);
-
   openPopup();
+  closePopup();
 }
 yes();
