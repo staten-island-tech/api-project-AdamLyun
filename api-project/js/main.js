@@ -12,7 +12,7 @@ async function getDatas(URL) {
         `<div class="output">
         <button class="f" >
         <img  src="${element.image}" alt="E"></button>
-<div class="popup" id="popup">
+<div class="hide" id="popup">
 <h1>${element.title}</h1>
 <p>${element.description}</p>
 <h3>Published In ${element.year_published}</h3>
@@ -29,15 +29,29 @@ async function getDatas(URL) {
   }
 }
 
+
+
+
+
 function openPopup() {
   let popup = document.querySelectorAll(".f");
   popup.forEach((button) => {
     button.addEventListener("click", function () {
-      let popup2 = document.getElementById("popup");
-      popup2.classList.add("open-popup");
-    });
-  });
-}
+      let aboutbook = document.getElementsByClassName("hide");
+      console.log(aboutbook)
+      aboutbook.classList.add("open-popup");
+ 
+  })
+      });       
+    }
+  
+
+
+
+
+
+
+
 
 function closePopup() {
   let popup2 = document.getElementById("popup");
