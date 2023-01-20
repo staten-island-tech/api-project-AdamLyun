@@ -10,7 +10,7 @@ async function getDatas(URL) {
       DOMSelectors.box.insertAdjacentHTML(
         "beforeend",
         `<div class="output">
-        <button class="f" >
+        <button id="f" >
         <img  src="${element.image}" alt="E"></button>
 <div class="hide" id="popup">
 <h1>${element.title}</h1>
@@ -29,29 +29,20 @@ async function getDatas(URL) {
   }
 }
 
-
-
-
-
 function openPopup() {
-  let popup = document.querySelectorAll(".f");
-  popup.forEach((button) => {
-    button.addEventListener("click", function () {
-      let aboutbook = document.getElementsByClassName("hide");
-      console.log(aboutbook)
-      aboutbook.classList.add("open-popup");
- 
-  })
-      });       
-    }
-  
-
-
-
-
-
-
-
+  let popup = document.querySelectorAll("#f");
+  popup.forEach((element) => {
+    element.addEventListener("click", function () {
+      let aboutbook = document.querySelectorAll(".hide");
+      console.log(aboutbook);
+      aboutbook.forEach(book => {
+        book.classList.add("open-popup");
+      });
+      
+      
+    });
+  });
+}
 
 function closePopup() {
   let popup2 = document.getElementById("popup");
