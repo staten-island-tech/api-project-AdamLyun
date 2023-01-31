@@ -19,7 +19,7 @@ async function getDatas(URL) {
         "beforeend",
         `
         <div class="output">
-        <button id="${id}" >
+        <button class="hvr-grow" id="${id}" >
         <img  src="${element.image}" alt="E"></button>
 <div class="hide" id="${popup}">
 <h2>${element.title}</h2>
