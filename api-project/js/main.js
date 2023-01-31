@@ -22,9 +22,9 @@ async function getDatas(URL) {
         <button id="${id}" >
         <img  src="${element.image}" alt="E"></button>
 <div class="hide" id="${popup}">
-<h1>${element.title}</h1>
-<p>${element.description}</p>
+<h2>${element.title}</h2>
 <h3>Published In ${element.year_published}</h3>
+<p>${element.description}</p>
 <button type="button" >Ok</button>
 </div>
         </div>
@@ -340,6 +340,240 @@ function closePopup1() {
     popup2.classList.remove("open-popup");
   });
 }
+function closePopup2() {
+  let popup2 = document.getElementById(mood[2]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup3() {
+  let popup2 = document.getElementById(mood[3]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup4() {
+  let popup2 = document.getElementById(mood[4]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup5() {
+  let popup2 = document.getElementById(mood[5]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup6() {
+  let popup2 = document.getElementById(mood[6]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup7() {
+  let popup2 = document.getElementById(mood[7]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup8() {
+  let popup2 = document.getElementById(mood[8]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup9() {
+  let popup2 = document.getElementById(mood[9]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup10() {
+  let popup2 = document.getElementById(mood[10]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup11() {
+  let popup2 = document.getElementById(mood[11]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup12() {
+  let popup2 = document.getElementById(mood[12]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup13() {
+  let popup2 = document.getElementById(mood[13]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup14() {
+  let popup2 = document.getElementById(mood[14]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup15() {
+  let popup2 = document.getElementById(mood[15]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup16() {
+  let popup2 = document.getElementById(mood[16]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup17() {
+  let popup2 = document.getElementById(mood[17]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup18() {
+  let popup2 = document.getElementById(mood[18]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup19() {
+  let popup2 = document.getElementById(mood[19]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup20() {
+  let popup2 = document.getElementById(mood[20]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup21() {
+  let popup2 = document.getElementById(mood[21]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup22() {
+  let popup2 = document.getElementById(mood[22]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup23() {
+  let popup2 = document.getElementById(mood[23]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup24() {
+  let popup2 = document.getElementById(mood[24]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup25() {
+  let popup2 = document.getElementById(mood[25]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup26() {
+  let popup2 = document.getElementById(mood[26]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup27() {
+  let popup2 = document.getElementById(mood[27]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup28() {
+  let popup2 = document.getElementById(mood[28]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup29() {
+  let popup2 = document.getElementById(mood[29]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup30() {
+  let popup2 = document.getElementById(mood[30]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup31() {
+  let popup2 = document.getElementById(mood[31]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup32() {
+  let popup2 = document.getElementById(mood[32]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup33() {
+  let popup2 = document.getElementById(mood[33]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup34() {
+  let popup2 = document.getElementById(mood[34]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup35() {
+  let popup2 = document.getElementById(mood[35]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup36() {
+  let popup2 = document.getElementById(mood[36]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup37() {
+  let popup2 = document.getElementById(mood[37]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup38() {
+  let popup2 = document.getElementById(mood[38]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup39() {
+  let popup2 = document.getElementById(mood[39]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
+function closePopup40() {
+  let popup2 = document.getElementById(mood[40]);
+  popup2.addEventListener("click", function () {
+    popup2.classList.remove("open-popup");
+  });
+}
 
 async function yes() {
   await getDatas(URL);
@@ -386,5 +620,44 @@ async function yes() {
   openPopup40();
   closePopup();
   closePopup1();
+  closePopup2();
+  closePopup3();
+  closePopup4();
+  closePopup5();
+  closePopup6();
+  closePopup7();
+  closePopup8();
+  closePopup9();
+  closePopup10();
+  closePopup11();
+  closePopup12();
+  closePopup13();
+  closePopup14();
+  closePopup15();
+  closePopup16();
+  closePopup17();
+  closePopup18();
+  closePopup19();
+  closePopup20();
+  closePopup21();
+  closePopup22();
+  closePopup23();
+  closePopup24();
+  closePopup25();
+  closePopup26();
+  closePopup27();
+  closePopup28();
+  closePopup29();
+  closePopup30();
+  closePopup31();
+  closePopup32();
+  closePopup33();
+  closePopup34();
+  closePopup35();
+  closePopup36();
+  closePopup37();
+  closePopup38();
+  closePopup39();
+  closePopup40();
 }
 yes();
