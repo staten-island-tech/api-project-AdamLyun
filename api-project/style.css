@@ -79,7 +79,7 @@ margin:30px 0 10px;
 }
 
 @media screen and (max-width:1440px) {
-  .inner{
+  .container{
     margin: 1rem;
     width: 40rem;
     height: 47rem;
@@ -93,22 +93,17 @@ margin:30px 0 10px;
   }
 }
 @media screen and (max-width:820px) {
-  .inner{
+  .container{
     margin: 2rem;
   }
-  .starter {
-    font-size: 450%;
-  }
-  .inner{
+  .container{
     margin: 2rem;
     width: 40rem;
     height: 47rem;
   }
 }
 @media screen and (max-width:390px) {
-  .starter {
-    font-size: 400%;
-  }
+
   .inner{
     margin: 3rem;
   }
