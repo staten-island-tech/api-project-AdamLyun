@@ -2,51 +2,53 @@ import { DOMSelectors } from "./dom";
 
 const URL = "https://seussology.info/api/books";
 
-let test = [];
-let mood = [];
 
 async function getDatas(URL) {
   try {
     const response = await fetch(URL);
     const data = await response.json();
+    let count = 0;
+    let number = 0;
     data.forEach((element) => {
-      let id = Math.random() * 100;
-      test.push(id);
-      let popup = Math.random();
-      mood.push(popup);
+      
 
       DOMSelectors.box.insertAdjacentHTML(
         "beforeend",
         `
         <div class="output">
-        <button class="hvr-grow yes" >
+        <button class="hvr-grow yes ${number++}" onClick="">
         <img  src="${element.image}" alt="E"></button>
-<div class="hide" id="english">
+
+
+<div class="hide" id="english${count++}">
 <h2>${element.title}</h2>
 <h3>Published In ${element.year_published}</h3>
 <p>${element.description}</p> 
 <button type="button" >Ok</button>
 </div>
+
         </div>
 `
       );
     });
   } catch (error) {
-    console.log(error);
+    console.log(error); 
   }
-}
+} 
 
 function openPopup() {
-  let popup = document.querySelectorAll(".yes");
-  popup.forEach(function (currentBtn) {
+  let btn = document.querySelectorAll(".yes");
+  btn.forEach(function (currentBtn) {
     currentBtn.addEventListener("click", function () {
-      let spanish = document.querySelectorAll("english");
-      spanish.forEach((element) => {
-        element.classList.add("open-popup");
+     
+       
+        let something = document.getElementById("english5" )
+        something.classList.add("open-popup")
+      
       });
     });
-  });
-}
+  };
+
 
 // function closePopup() {
 //   let popup2 = document.getElementById(mood[0]);
